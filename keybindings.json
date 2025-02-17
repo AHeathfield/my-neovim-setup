@@ -1,0 +1,39 @@
+// Place your key bindings in this file to override the defaults
+// This is for vscode vim exstension
+
+[
+  {
+    "key": "ctrl+h",
+    "command": "vim.remap",
+    "when": "editorTextFocus && vim.mode == 'Insert'",
+    "args": { "after": ["<Left>"] }
+  },
+  {
+    "key": "ctrl+j",
+    "command": "vim.remap",
+    "when": "editorTextFocus && vim.mode == 'Insert'",
+    "args": { "after": ["<Down>"] }
+  },
+  {
+    "key": "ctrl+k",
+    "command": "vim.remap",
+    "when": "editorTextFocus && vim.mode == 'Insert'",
+    "args": { "after": ["<Up>"] }
+  },
+  {
+    "key": "ctrl+l",
+    "command": "vim.remap",
+    "when": "editorTextFocus && vim.mode == 'Insert'",
+    "args": { "after": ["<Right>"] }
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorLineEnd",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "cursorHome",
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+  }
+]
