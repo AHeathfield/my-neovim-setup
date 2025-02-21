@@ -45,5 +45,15 @@
         "key": "shift+tab",
         "command": "workbench.action.previousEditor",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     }
 ]
